@@ -8,7 +8,7 @@ if(!version){
   process.exit(1)
 }
 
-shell.exec ('npm install --registry https://registry.npm.taobao.org');
+shell.exec ('npm install');
 shell.exec ('npm run build-client');
 shell.exec ('npm run changelog');
 shell.exec ('git add .');
